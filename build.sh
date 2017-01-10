@@ -11,7 +11,7 @@
 # env:
 #     global:
 . gh_token.sh
-GIT_REPO="https://${GH_TOKEN}@github.com/michelek/ecms_kml.git"
+GIT_REPO="https://${GH_TOKEN}@github.com/mitselek/ecms_kml.git"
 GIT_USER="Mihkel Putrinš"
 GIT_EMAIL="mihkel.putrinsh@gmail.com"
 
