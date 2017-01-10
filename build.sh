@@ -49,11 +49,11 @@ rm -rf ${BUILD_DIR}/assets
 mkdir -p ${BUILD_DIR}/assets
 cp -r ./assets/* ${BUILD_DIR}/assets
 
-npm install entu-cms
+# npm install entu-cms
 
 # script:
-./node_modules/entu-cms/helpers/entu2yaml.js
-./node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
+~/node_modules/entu-cms/helpers/entu2yaml.js
+~/node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
 
 # after_success:
 # SOURCE_COMMIT=$(git rev-parse --short HEAD)
