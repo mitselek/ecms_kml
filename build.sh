@@ -29,6 +29,7 @@ DATA_LIST=${OUT_DIR}/entities.yaml
 mkdir ${OUT_DIR}
 cp -r ${SOURCE_DIR}/* ${OUT_DIR}
 
+rm -rf ${BUILD_DIR}
 mkdir ${BUILD_DIR}
 echo cd ${BUILD_DIR}
 cd ${BUILD_DIR}
