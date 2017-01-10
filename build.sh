@@ -19,17 +19,12 @@ export BUILD_DIR=./build
 export SOURCE_DIR=./source
 export OUT_DIR=./tmp_source
 export ENTU_URL=https://kogumelugu.entu.ee
-export E_DEF=interview
-export PARENT_EID=1150
-
-export TEMPLATE=${SOURCE_DIR}/item.jade
-export DATA_LIST=${OUT_DIR}/entities.yaml
 
 # before_script:
 mkdir ${OUT_DIR}
 cp -r ${SOURCE_DIR}/* ${OUT_DIR}
 
-rm -rf ${BUILD_DIR}
+# rm -rf ${BUILD_DIR}
 mkdir ${BUILD_DIR}
 echo cd ${BUILD_DIR}
 cd ${BUILD_DIR}
@@ -53,7 +48,22 @@ cp -r ./assets/* ${BUILD_DIR}/assets
 # npm install entu-cms
 
 # script:
+echo
+echo --------- FETCH
+export E_DEF=story
+export PARENT_EID=1150
+export TEMPLATE=${SOURCE_DIR}/item.jade
+export DATA_LIST=${OUT_DIR}/stories.yaml
 ~/node_modules/entu-cms/helpers/entu2yaml.js
+
+export E_DEF=interview
+export PARENT_EID=1150
+export TEMPLATE=${SOURCE_DIR}/item.jade
+export DATA_LIST=${OUT_DIR}/interviews.yaml
+~/node_modules/entu-cms/helpers/entu2yaml.js
+
+echo
+echo --------- BUILD
 ~/node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
 
 # after_success:
