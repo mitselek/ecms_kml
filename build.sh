@@ -11,19 +11,19 @@
 # env:
 #     global:
 . gh_token.sh
-env GIT_REPO="https://${GH_TOKEN}@github.com/mitselek/ecms_kml.git"
-env GIT_USER="Mihkel Putrinš"
-env GIT_EMAIL="mihkel.putrinsh@gmail.com"
+export GIT_REPO="https://${GH_TOKEN}@github.com/mitselek/ecms_kml.git"
+export GIT_USER="Mihkel Putrinš"
+export GIT_EMAIL="mihkel.putrinsh@gmail.com"
 
-env BUILD_DIR=./build
-env SOURCE_DIR=./source
-env OUT_DIR=./tmp_source
-env ENTU_URL=https://kogumelugu.entu.ee
-env E_DEF=interview
-env PARENT_EID=1150
+export BUILD_DIR=./build
+export SOURCE_DIR=./source
+export OUT_DIR=./tmp_source
+export ENTU_URL=https://kogumelugu.entu.ee
+export E_DEF=interview
+export PARENT_EID=1150
 
-env TEMPLATE=${SOURCE_DIR}/item.jade
-env DATA_LIST=${OUT_DIR}/entities.yaml
+export TEMPLATE=${SOURCE_DIR}/item.jade
+export DATA_LIST=${OUT_DIR}/entities.yaml
 
 # before_script:
 mkdir ${OUT_DIR}
