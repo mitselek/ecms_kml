@@ -28,18 +28,27 @@ $('select').each(function () {
 
     $styledSelect.click(function (e) {
         e.stopPropagation();
+        if ($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $list.hide();
+        }
+        else{
         $('div.select-styled.active').each(function () {
             $(this).removeClass('active').next('ul.select-options').hide();
         });
         $(this).toggleClass('active').next('ul.select-options').toggle();
+        }
     });
 
     $listItems.click(function (e) {
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
+        $this.val($(this).text());
         $list.hide();
-        //console.log($this.val());
+
+        var scope = angular.element($this).scope();
+        scope.sData[$this.data('field')] = $(this).text()
+        scope.doFilter(true);
     });
 
     $(document).click(function () {
