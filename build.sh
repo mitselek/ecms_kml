@@ -30,19 +30,23 @@ mkdir ${OUT_DIR}
 cp -r ${SOURCE_DIR}/* ${OUT_DIR}
 
 mkdir ${BUILD_DIR}
+echo cd ${BUILD_DIR}
 cd ${BUILD_DIR}
 pwd
+
 git clone ${GIT_REPO} ./
 git checkout gh-pages
 git pull
 
+echo cd ..
 cd ..
+pwd
 
 rm -rf ${BUILD_DIR}/assets
 mkdir -p ${BUILD_DIR}/assets
 cp -r ./assets/* ${BUILD_DIR}/assets
 
-# npm install entu-cms
+npm install entu-cms
 
 # script:
 ./node_modules/entu-cms/helpers/entu2yaml.js
