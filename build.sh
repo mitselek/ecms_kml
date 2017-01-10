@@ -31,6 +31,7 @@ cp -r ${SOURCE_DIR}/* ${OUT_DIR}
 
 mkdir ${BUILD_DIR}
 cd ${BUILD_DIR}
+pwd
 git clone ${GIT_REPO} ./
 git checkout gh-pages
 git pull
@@ -48,11 +49,11 @@ cp -r ./assets/* ${BUILD_DIR}/assets
 ./node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
 
 # after_success:
-    # - SOURCE_COMMIT=$(git rev-parse --short HEAD)
-    #
-    # - cd ${BUILD_DIR}
-    # - git config user.name ${GIT_USER}
-    # - git config user.email ${GIT_USER}
-    # - git add -A .
-    # - git commit -m "Rebuild gh-pages at commit ${SOURCE_COMMIT}"
-    # - git push
+# SOURCE_COMMIT=$(git rev-parse --short HEAD)
+#
+# cd ${BUILD_DIR}
+# git config user.name ${GIT_USER}
+# git config user.email ${GIT_USER}
+# git add -A .
+# git commit -m "Rebuild gh-pages at commit ${SOURCE_COMMIT}"
+# git push
