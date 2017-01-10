@@ -10,10 +10,10 @@
 # Get GitHub token (public_repo) from https://github.com/settings/tokens/new and set it as GH_TOKEN env parameter
 # env:
 #     global:
-# . gh_token.sh
-# GIT_REPO="https://${GH_TOKEN}@github.com/michelek/ecms_kml.git"
-# GIT_USER="Mihkel Putrinš"
-# GIT_EMAIL="mihkel.putrinsh@gmail.com"
+. gh_token.sh
+GIT_REPO="https://${GH_TOKEN}@github.com/michelek/ecms_kml.git"
+GIT_USER="Mihkel Putrinš"
+GIT_EMAIL="mihkel.putrinsh@gmail.com"
 
 BUILD_DIR=./build
 SOURCE_DIR=./source
@@ -34,8 +34,11 @@ echo cd ${BUILD_DIR}
 cd ${BUILD_DIR}
 pwd
 
+echo git clone ${GIT_REPO} ./
 git clone ${GIT_REPO} ./
+echo git checkout gh-pages
 git checkout gh-pages
+echo git pull
 git pull
 
 echo cd ..
