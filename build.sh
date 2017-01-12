@@ -50,16 +50,16 @@ cp -r ./assets/* ${BUILD_DIR}/assets
 # script:
 echo
 echo --------- FETCH
-export E_DEF=(story,interview)
-export PARENT_EID=1150
-export TEMPLATE=${SOURCE_DIR}/item.jade
-export DATA_LIST=${OUT_DIR}/entities.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
-
-# export E_DEF=interview
+# export E_DEF=(story,interview)
 # export PARENT_EID=1150
 # export TEMPLATE=${SOURCE_DIR}/item.jade
-# export DATA_LIST=${OUT_DIR}/entities.yaml
+# export DATA_LIST=${OUT_DIR}/videos.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
+#
+# export E_DEF=institution
+# export PARENT_EID=1178
+# export TEMPLATE=
+# export DATA_LIST=${OUT_DIR}/partners.yaml
 # ~/node_modules/entu-cms/helpers/entu2yaml.js
 
 echo

@@ -1,9 +1,9 @@
 block vars
     -
-        var entities = F.entities
+        var videos = F.videos
 
-        //- if (entities) {
-        //-     entities.sort(function (a, b) {
+        //- if (videos) {
+        //-     videos.sort(function (a, b) {
         //-         if (a.displayname < b.displayname) {
         //-             return -1
         //-         } else if (a.displayname > b.displayname) {
@@ -22,7 +22,7 @@ html(lang='et')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         meta(property='og:url', content='https://polska.ee/' + page.path + '/')
         meta(property='og:title', content=title || page.title)
-        meta(property='og:image', content=image || 'https://polska.ee/assets/images/polska-logo-square.png')
+        meta(property='og:image', content=image || 'https://kogumelugu.ee/assets/images/kogumelugu-turquoise.svg')
         meta(property='og:description', content=description)
 
         title= title || page.title
@@ -50,14 +50,16 @@ html(lang='et')
                     .row
                         .margin.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-0
                             a(href='/')
-                                img.img-responsive(src='/assets/images/kogumelugu-turquoise.svg', alt='logo')
+                                img.img-responsive(src='assets/images/kogumelugu-turquoise.svg', alt='logo', height='80')
 
                         block content
-                            if entities
+                            if videos
                                 .margin.col-xs-12.col-sm-8.col-md-7.col-md-offset-1
                                     .row
-                                        each e in entities
-                                            a.list-item.col-xs-12(href=e.properties.path.values[0].value + '/', data-geo=e.properties.geo.values[0].value, data-info=e.displayinfo)= e.displayname
+                                        each e in videos
+                                            p
+                                                a.list-item.col-xs-12(href=e.properties.path.values[0].value + '/')= e.displayname
+                                                //- a.list-item.col-xs-12(href=e.properties.path.values[0].value + '/', data-info=e.displayinfo)= e.displayname
             .margin
         block footer
 

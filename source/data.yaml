@@ -1,0 +1,9 @@
+page:
+    title: Kogu me lugu
+    data:
+        videos: videos.yaml
+        partners: partners.yaml
+        financiers: financiers.yaml
+        thanksto: thanksto.yaml
+        producer: producer.yaml
+        coproducer: coproducer.yaml
