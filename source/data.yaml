@@ -4,6 +4,10 @@ page:
         videos: videos.yaml
         partners: partners.yaml
         financiers: financiers.yaml
-        thanksto: thanksto.yaml
+        thankstoteam: thankstoteam.yaml
+        thankstosupporters: thankstosupporters.yaml
         producer: producer.yaml
         coproducer: coproducer.yaml
+    locales:
+      - et
+      - en
