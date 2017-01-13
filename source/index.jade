@@ -28,8 +28,8 @@ html(lang='et')
         title= title || page.title
 
         link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i', rel='stylesheet', type='text/css')
-        link(href='/assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-        link(href='/style.css', rel='stylesheet', type='text/css')
+        link(href='./assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+        link(href='./style.css', rel='stylesheet', type='text/css')
 
         script(type='application/javascript').
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,24 +42,31 @@ html(lang='et')
     body
         #map-container.container-fluid
             .row
-                #map.col-xs-12
+                a(href='/')
+                    img.img-responsive(src='./assets/images/kogumelugu-turquoise.svg', alt='logo', width='80')
+                //- #map.col-xs-12
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        if !user
+                            a(href='signin') signin
+                        else
+                            a(href='signin/exit') exit
+
+                    li
+                        a(href='/et') EST
+                    li
+                        a(href='/en') ENG
 
         #content.container-fluid
-            .row
-                .container
-                    .row
-                        .margin.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-0
-                            a(href='/')
-                                img.img-responsive(src='/assets/images/kogumelugu-turquoise.svg', alt='logo', height='80')
-
-                        block content
-                            if videos
-                                .margin.col-xs-12.col-sm-8.col-md-7.col-md-offset-1
-                                    .row
-                                        each e in videos
-                                            p
-                                                a.list-item.col-xs-12(href=e.properties.path.values[0].value + '/')= e.displayname
-                                                //- a.list-item.col-xs-12(href=e.properties.path.values[0].value + '/', data-info=e.displayinfo)= e.displayname
+            block content
+                if videos
+                    .margin.col-xs-12.col-sm-8.col-md-7.col-md-offset-1
+                        .row
+                            each e in videos
+                                -
+                                    var quotedbackurl = "https://kogumelugu.ee/et/video/picture?id=" + e.properties.videoUrl.values[0].value + ""
+                                div.col-xs-4.thumbcontainer
+                                    a.videothumb(href=e.properties.path.values[0].value, style='background:url(' + quotedbackurl + '); background-position: center; background-size: cover;')= e.displayname
             .margin
         block footer
 
@@ -68,5 +75,5 @@ html(lang='et')
                 .row
                     #image.col-xs-12(style="background-image:url('" + image + "')")
 
-        script(src='/assets/js/jquery-3.1.1.min.js', type='application/javascript')
-        script(src='/script.js', type='application/javascript')
+        script(src='./assets/js/jquery-3.1.1.min.js', type='application/javascript')
+        script(src='./script.js', type='application/javascript')

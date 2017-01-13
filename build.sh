@@ -49,59 +49,60 @@ cp -r ./assets/* ${BUILD_DIR}/assets
 
 # script:
 echo
-echo --------- FETCH
-export E_DEF=
-# export E_DEF=(story,interview)
-export PARENT_EID=1150
-export TEMPLATE=${SOURCE_DIR}/item.jade
-export DATA_LIST=${OUT_DIR}/videos.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
-
-export E_DEF=
-# export E_DEF=(institution,person)
-export PARENT_EID=1178
-export TEMPLATE=
-export DATA_LIST=${OUT_DIR}/partners.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
-
-export E_DEF=
-# export E_DEF=institution
-export PARENT_EID=1179
-export TEMPLATE=
-export DATA_LIST=${OUT_DIR}/financiers.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
-
-export E_DEF=
-# export E_DEF=person
-export PARENT_EID=1863
-export TEMPLATE=
-export DATA_LIST=${OUT_DIR}/thankstoteam.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
-
-export E_DEF=
-# export E_DEF=person
-export PARENT_EID=1180
-export TEMPLATE=
-export DATA_LIST=${OUT_DIR}/thankstosupporters.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
-
-export E_DEF=
-# export E_DEF=person
-export PARENT_EID=1177
-export TEMPLATE=
-export DATA_LIST=${OUT_DIR}/coproducer.yaml
-~/node_modules/entu-cms/helpers/entu2yaml.js
+# echo --------- FETCH
+# export E_DEF=
+# # export E_DEF=(story,interview)
+# export PARENT_EID=1150
+# export TEMPLATE=${SOURCE_DIR}/item.jade
+# export DATA_LIST=${OUT_DIR}/videos.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
+#
+# export E_DEF=
+# # export E_DEF=(institution,person)
+# export PARENT_EID=1178
+# export TEMPLATE=
+# export DATA_LIST=${OUT_DIR}/partners.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
+#
+# export E_DEF=
+# # export E_DEF=institution
+# export PARENT_EID=1179
+# export TEMPLATE=
+# export DATA_LIST=${OUT_DIR}/financiers.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
+#
+# export E_DEF=
+# # export E_DEF=person
+# export PARENT_EID=1863
+# export TEMPLATE=
+# export DATA_LIST=${OUT_DIR}/thankstoteam.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
+#
+# export E_DEF=
+# # export E_DEF=person
+# export PARENT_EID=1180
+# export TEMPLATE=
+# export DATA_LIST=${OUT_DIR}/thankstosupporters.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
+#
+# export E_DEF=
+# # export E_DEF=person
+# export PARENT_EID=1177
+# export TEMPLATE=
+# export DATA_LIST=${OUT_DIR}/coproducer.yaml
+# ~/node_modules/entu-cms/helpers/entu2yaml.js
 
 echo
 echo --------- BUILD
 ~/node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
 
 # after_success:
-# SOURCE_COMMIT=$(git rev-parse --short HEAD)
-#
-# cd ${BUILD_DIR}
-# git config user.name ${GIT_USER}
-# git config user.email ${GIT_USER}
-# git add -A .
-# git commit -m "Rebuild gh-pages at commit ${SOURCE_COMMIT}"
-# git push
+SOURCE_COMMIT=$(git rev-parse --short HEAD)
+
+cd ${BUILD_DIR}
+git config user.name ${GIT_USER}
+git config user.email ${GIT_USER}
+git add -A .
+git commit -m "Rebuild gh-pages at commit ${SOURCE_COMMIT}"
+git push
+cd ..
