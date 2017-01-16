@@ -26,14 +26,11 @@ cp -r ${SOURCE_DIR}/* ${OUT_DIR}
 
 rm -rf ${BUILD_DIR}
 mkdir ${BUILD_DIR}
-echo cd ${BUILD_DIR}
+
 cd ${BUILD_DIR}
 git clone ${GIT_REPO} ./
-echo git checkout gh-pages
 git checkout gh-pages
-echo git pull
 git pull
-echo cd ..
 cd ..
 
 rm -rf ${BUILD_DIR}/assets
@@ -43,16 +40,16 @@ cp -r ./assets/* ${BUILD_DIR}/assets
 # npm install entu-cms
 
 # script:
-echo
-echo --------- FETCH
-export E_DEF=
-# export E_DEF=(story,interview)
-# export PARENT_EID=2577
-export PARENT_EID=1150
-export ITEM_DIR=./_videos
-export ITEM_YAML=video.yaml
-export LIST_YAML=${OUT_DIR}/videos.yaml
-~/github/entu-cms/helpers/entu2yaml.js
+# echo
+# echo --------- FETCH
+# export E_DEF=
+# # export E_DEF=(story,interview)
+# # export PARENT_EID=2577
+# export PARENT_EID=1150
+# export ITEM_DIR=./_videos
+# export ITEM_YAML=video.yaml
+# export LIST_YAML=${OUT_DIR}/videos.yaml
+# ~/github/entu-cms/helpers/entu2yaml.js
 
 # export E_DEF=
 # # export E_DEF=(story,interview)
@@ -100,13 +97,16 @@ echo
 echo --------- BUILD
 ~/node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
 
-# after_success:
-SOURCE_COMMIT=$(git rev-parse --short HEAD)
-
-cd ${BUILD_DIR}
-git config user.name ${GIT_USER}
-git config user.email ${GIT_USER}
-git add -A .
-git commit -m "Rebuild gh-pages at commit ${SOURCE_COMMIT}"
-git push
-cd ..
+# echo
+# echo --------- COMMIT
+#
+# # after_success:
+# SOURCE_COMMIT=$(git rev-parse --short HEAD)
+#
+# cd ${BUILD_DIR}
+# git config user.name ${GIT_USER}
+# git config user.email ${GIT_USER}
+# git add -A .
+# git commit -m "Rebuild gh-pages at commit ${SOURCE_COMMIT}"
+# git push
+# cd ..
