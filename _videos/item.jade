@@ -3,9 +3,10 @@ extend ../index
 
 append vars
     -
-        var title = D.displayname
-        var description = D.displayinfo
-        var image = D.properties.photo.values ? 'https://kogumelugu.entu.ee/api2/file-' + D.properties.photo.values[0].db_value : null
+        var video = F.video
+        var title = video.displayname
+        var description = video.displayinfo
+        var image = video.properties.photo.values ? 'https://kogumelugu.entu.ee/api2/file-' + video.properties.photo.values[0].db_value : null
 
         var values = function (object) {
             var result = []
@@ -16,7 +17,7 @@ append vars
             return result
         }
 
-        var properties = values(D.properties)
+        var properties = values(video.properties)
 
         if (properties) {
             properties.sort(function (a, b) {
@@ -33,7 +34,7 @@ append vars
 
 block content
     .margin.col-xs-12.col-sm-10.col-md-9.col-md-offset-1
-        h1= D.displayname
+        h1= video.displayname
 
         dl.dl-horizontal.margin
             each p in properties
