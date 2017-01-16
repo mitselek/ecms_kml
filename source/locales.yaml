@@ -1,0 +1,59 @@
+'':
+    KML:
+        en: Kogu me lugu
+        et: Kogu me lugu
+    KML_logo:
+        en: Kogu me lugu
+        et: Kogu me lugu
+Jon Doe:
+    en: Unnamed
+    et: Nimeta
+button:
+    volunteer:
+        en: Become a volunteer!
+        et: Tule vabatahtlikuks!
+        lv: button.volunteer
+error:
+    Not Found:
+        en: Page not found
+        et: >-
+            Seda lehte pole veel valmis tehtud või siis on heaks arvatud ta
+            kustutada.
+label:
+    duration:
+        en: Duration
+        et: Kestus
+    minutes:
+        short:
+            en: min
+            et: min
+lang:
+    en:
+        en: EN
+        et: EN
+    et:
+        en: EE
+        et: EE
+linkto:
+    intranet:
+        en: View in Entu
+        et: Vaata Entus
+nav:
+    home:
+        en: Home
+        et: Avaleht
+    introduction:
+        en: Introduction
+        et: Tutvustus
+    submit:
+        en: Submit Story
+        et: Saada lugu
+    topics:
+        en: Topics
+        et: Teemad
+    team:
+        en: Team
+        et: Tegijad
+    support:
+        en: Support Us
+        et: Toeta

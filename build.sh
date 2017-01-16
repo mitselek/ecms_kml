@@ -24,22 +24,17 @@ export ENTU_URL=https://kogumelugu.entu.ee
 mkdir ${OUT_DIR}
 cp -r ${SOURCE_DIR}/* ${OUT_DIR}
 
-# rm -rf ${BUILD_DIR}
+rm -rf ${BUILD_DIR}
 mkdir ${BUILD_DIR}
 echo cd ${BUILD_DIR}
 cd ${BUILD_DIR}
-pwd
-
-echo git clone ${GIT_REPO} ./
 git clone ${GIT_REPO} ./
 echo git checkout gh-pages
 git checkout gh-pages
 echo git pull
 git pull
-
 echo cd ..
 cd ..
-pwd
 
 rm -rf ${BUILD_DIR}/assets
 mkdir -p ${BUILD_DIR}/assets
@@ -49,7 +44,16 @@ cp -r ./assets/* ${BUILD_DIR}/assets
 
 # script:
 echo
-# echo --------- FETCH
+echo --------- FETCH
+export E_DEF=
+# export E_DEF=(story,interview)
+# export PARENT_EID=2577
+export PARENT_EID=1150
+export ITEM_DIR=./_videos
+export ITEM_YAML=video.yaml
+export LIST_YAML=${OUT_DIR}/videos.yaml
+~/github/entu-cms/helpers/entu2yaml.js
+
 # export E_DEF=
 # # export E_DEF=(story,interview)
 # export PARENT_EID=1150

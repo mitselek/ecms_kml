@@ -28,3 +28,7 @@ cleanup:
 dev:
     aliases: true
     paths:
+
+locales:
+    - et
+    - en

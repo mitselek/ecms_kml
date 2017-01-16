@@ -1,6 +1,6 @@
 body
     font-size 16px
-    font-family 'PT Sans', sans-serif
+    font-family 'Aino', sans-serif
     font-weight 400
 
 a
@@ -11,13 +11,19 @@ a
     &:focus
         text-decoration none
 
-.thumbcontainer
-    border 0px solid blue
+.videotitle
+    position absolute
+    top 1em
+    left 1em
+    font-size 22px
+    font-family Aino Display
+    padding 0.3em
+    background-color rgba(210,230,255,0.633)
 
 .videothumb
     border 0px solid green
     width 100%
-    padding-bottom 75%
+    padding-bottom 65%
     display block
     margin 1em
 
@@ -62,7 +68,7 @@ pre
     right 0px
     bottom 0px
     background-size cover
-    background-position center center
+    background-position center
     z-index -200
 
 #footer
@@ -74,3 +80,21 @@ pre
         font-size 30px
         line-height 30px
         color #8B8B8B
+
+@font-face
+    font-family Aino Display
+    src url(../assets/fonts/Harju_display_27_1223_o.woff) format("woff")
+    font-weight 400
+    font-style normal
+
+@font-face
+    font-family Aino Bold
+    src url(../assets/fonts/Harju_27_1223-Bold.woff) format("woff")
+    font-weight 700
+    font-style normal
+
+@font-face
+    font-family Aino
+    src url(../assets/fonts/Harju_27_1223-Regular.woff) format("woff")
+    font-weight 400
+    font-style normal

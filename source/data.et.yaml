@@ -8,6 +8,6 @@ page:
         thankstosupporters: thankstosupporters.yaml
         producer: producer.yaml
         coproducer: coproducer.yaml
-    locales:
-      - et
-      - en
+        locales: locales.yaml
+    aliases:
+        - /

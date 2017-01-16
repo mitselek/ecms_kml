@@ -1,0 +1,409 @@
+'':
+    KGS:
+        en: Kanuti Gildi Saal
+        et: Kanuti Gildi Saal
+    KGS_logo:
+        en: Kanuti Gildi Saal logo
+        et: Kanuti Gildi Saali logo
+        lv: Kanuti Gildi Saal logo
+    season:
+        en: Season
+        et: Hooaeg
+        lv: Sezona
+Jon Doe:
+    en: Unnamed
+    et: Nimeta
+button:
+    artist-talk:
+        en: Artist talk
+        et: Vestlus
+    buy_ticket:
+        en: Buy ticket
+        et: Osta pilet
+        free_admission:
+            en: Free Admission
+            et: Tasuta
+        future_sale:
+            et: Tuleb müüki
+        going_now:
+            en: Buy ticket
+            et: Osta pilet
+        lv: Pirkt biļeti
+        no_tickets:
+            et: button.buy_ticket.no_tickets
+        presale_at_boxoffices:
+            en: From box office
+            et: Müügipunktist
+        regular_presale:
+            en: Buy ticket
+            et: Osta pilet
+            lv: Pirkt biļeti
+        sold_out:
+            en: Sold out
+            et: Välja müüdud
+    canceled:
+        en: Canceled!
+        et: Jääb ära!
+    category:
+        en: Category
+        et: Kategooria
+    load-more:
+        en: Load more
+        et: Lae veel
+    on_tour:
+        en: On Tour
+        et: Tuuril
+    premiere:
+        en: Premiere!
+        et: Esietendus!
+    search:
+        en: Search
+        et: Otsi
+        lv: Meklē
+    today:
+        en: Today!
+        et: Täna!
+    view-all:
+        en: View all
+        et: Vaata kõiki
+    volunteer:
+        en: Become a volunteer!
+        et: Tule vabatahtlikuks!
+        lv: button.volunteer
+    year:
+        en: Year
+        et: Aasta
+categories:
+    dance:
+        en: Dance
+        et: Tants
+        lv: Deja
+    film:
+        en: Video
+        et: Video
+        lv: Video
+    lecture:
+        en: Lecture
+        et: Loeng
+        lv: Lekcija
+    music:
+        en: Music
+        et: Muusika
+        lv: Mūzika
+    new-circus:
+        en: New Circus
+        et: Uus Tsirkus
+        lv: Cirks
+    performance:
+        en: Performance
+        et: Performance
+        lv: Performance
+    theatre:
+        en: Theatre
+        et: Teater
+        lv: Teātris
+error:
+    Not Found:
+        en: Page not found
+        et: >-
+            Seda lehte pole veel valmis tehtud või siis on heaks arvatud ta
+            kustutada.
+        lv: Lapa nav atrodama
+    cache_missing_residency_past:
+        en: Loading data. Should be ready in a minute
+        et: Laadin andmeid. Minuti pärast peaks valmis olema
+    cache_missing_upcoming_events:
+        en: No upcoming events
+        et: Tulevasi sündmusi pole
+    cache_missing_upcoming_tours:
+        en: Loading data. Should be ready in a minute
+        et: Laadin andmeid. Minuti pärast peaks valmis olema
+    program_upcoming is not defined:
+        en: Loading data. Should be ready in a minute
+        et: Laadin andmeid. Minuti pärast peaks valmis olema
+label:
+    duration:
+        en: Duration
+        et: Kestus
+    minutes:
+        short:
+            en: min
+            et: min
+lang:
+    en:
+        en: EN
+        et: EN
+        lv: EN
+    et:
+        en: EE
+        et: EE
+        lv: EE
+    lv:
+        en: LT
+        et: LT
+        lv: LT
+linkto:
+    intranet:
+        en: View in Entu
+        et: Vaata Entus
+month:
+    '1':
+        en: January
+        et: Jaanuar
+    '10':
+        en: October
+        et: Oktoober
+    '11':
+        en: November
+        et: November
+    '12':
+        en: December
+        et: Detsember
+    '2':
+        en: February
+        et: Veebruar
+    '2016':
+        et: month.2016
+    '3':
+        en: March
+        et: Märts
+    '4':
+        en: April
+        et: Aprill
+    '5':
+        en: May
+        et: Mai
+    '6':
+        en: June
+        et: Juuni
+    '7':
+        en: July
+        et: Juuli
+    '8':
+        en: August
+        et: August
+    '9':
+        en: September
+        et: September
+nav:
+    about:
+        en: About Us
+        et: Meist
+        lv: Par mums
+    about-festival:
+        en: About
+        et: Festivalist
+    contact:
+        en: Contact
+        et: Kontakt
+        lv: Kontakts
+    coproductions:
+        en: Co-Productions
+        et: Kaasproduktsioonid
+        lv: nav.coproductions
+    festivals:
+        en: Festivals
+        et: Festivalid
+    magazine:
+        en: Magazine
+        et: Magasin
+    media:
+        en: Media
+        et: Meedia
+    press:
+        en: Press
+        et: Press
+    program:
+        en: Program
+        et: Programm
+        lv: Programma
+    projects:
+        en: Projects
+        et: Projektid
+        lv: Projekti
+    residency:
+        en: Residencies
+        et: Residentuurid
+        lv: Residentūra
+    schedule:
+        en: Program
+        et: Kava
+        lv: nav.schedule
+    sponsors:
+        en: Supporters
+        et: Toetajad
+    tickets:
+        en: Tickets
+        et: Piletid
+    tours:
+        en: On Tour
+        et: Tuurid
+        lv: nav.tours
+newsletter:
+    mailchimp:
+        action:
+            en: >-
+                //saal.us9.list-manage.com/subscribe/post?u=b4d371ad73e2be3853f5cd989&amp;id=deab6bd3c2
+            et: >-
+                //saal.us9.list-manage.com/subscribe/post?u=b4d371ad73e2be3853f5cd989&amp;id=11b766323b
+        inputName:
+            en: b_b4d371ad73e2be3853f5cd989_deab6bd3c2
+            et: b_1e1d48fe600fda5c3f6a39b75_fdc080b2d5
+    placeholder:
+        en: Enter e-mail
+        et: Sinu mailiaadress
+    signup:
+        en: Sign-up for newsletter
+        et: Liitu uudiskirjaga
+NUP:
+    get-newspaper-2016-1:
+        en: Get NUP NEWS!
+        et: Loe NUP lehte!
+placeholder:
+    search:
+        en: Search…
+        et: Otsi…
+        lv: Meklē…
+q:
+    date:
+        en: Date
+        et: Kuupäev
+        lv: Datums
+    matches:
+        en: matches
+        et: vastet
+    query:
+        en: Searched for
+        et: Otsisid
+        lv: Meklējāt
+    results:
+        '0':
+            en: No matching results
+            et: Ei leidnud
+        '1':
+            en: Found one
+            et: Üks oli
+        en: Results
+        et: Leidsin
+title:
+    archive:
+        en: Archive
+        et: Arhiiv
+    audio:
+        en: Heli
+        et: Audio
+    basement:
+        en: Basement
+        et: Kelder
+    calendar:
+        en: Calendar
+        et: Kalender
+    contact:
+        en: Contact
+        et: Kontakt
+        lv: title.contact
+    event:
+        en: at SAAL
+        et: SAALis
+    floorplans:
+        en: Floorplans
+        et: Saaliplaanid
+    free:
+        en: Free of charge!
+        et: Tasuta!
+    gallery:
+        en: Gallery
+        et: Galerii
+    kanut-co_productions:
+        en: title.kanut-co_productions
+        et: title.kanut-co_productions
+    kanut-residency:
+        en: Residents of Kanuti Gildi SAAL
+        et: Kanuti Gildi SAALi residendid
+    news:
+        en: News
+        et: Uudised
+    no-echo:
+        en: No Posts
+        et: Artikleid pole
+    no-events:
+        en: No events
+        et: Sündmusi ei toimu
+        lv: Pasākumu nav
+    no-residencies:
+        en: No Residencies
+        et: Residente ei ole
+    no-tours:
+        en: No tours
+        et: Tuuril ei ole hetkel ühtki lavastust
+    onsite-price:
+        en: At the door
+        et: Kohapealt
+    past:
+        en: Past
+        et: Olnud
+    press:
+        en: Press
+        et: Pressikajastus
+    pyhavaimu-residency:
+        en: Residents of Pühavaimu SAAL
+        et: Pühavaimu SAALi residendid
+    related:
+        en: Other works
+        et: Teised tööd
+    related-articles:
+        en: Related posts
+        et: Seotud postitused
+    residency:
+        en: Residency
+        et: Residentuur
+    saal:
+        en: Saal
+        et: Saal
+    sound:
+        en: Sound
+        et: Heli
+    sponsors:
+        en: Supporters and networks
+        et: Toetajad ja võrgustikud
+    studio:
+        en: Studio
+        et: Stuudio
+    tour:
+        en: On tour
+        et: Tuuril
+    upcoming:
+        en: Upcoming
+        et: Tulekul
+    video:
+        en: Video
+        et: Video
+weekdays:
+    '1':
+        en: Monday
+        et: esmaspäev
+        lv: pirmdiena
+    '2':
+        en: Tuesday
+        et: teisipäev
+        lv: otrdiena
+    '3':
+        en: Wednesday
+        et: kolmapäev
+        lv: trešdiena
+    '4':
+        en: Thursday
+        et: neljapäev
+        lv: ceturdiena
+    '5':
+        en: Friday
+        et: reede
+        lv: piektdiena
+    '6':
+        en: Saturday
+        et: laupäev
+        lv: sestdiena
+    '0':
+        en: Sunday
+        et: pühapäev
+        lv: svētdiena
