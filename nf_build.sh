@@ -24,8 +24,8 @@ echo
 echo --------- FETCH
 export E_DEF=
 # export E_DEF=(story,interview)
-export PARENT_EID=2577
-# export PARENT_EID=1150
+# export PARENT_EID=2577
+export PARENT_EID=1150
 export ITEM_DIR=./_videos
 export ITEM_YAML=video.yaml
 export LIST_YAML=${OUT_DIR}/videos.yaml
