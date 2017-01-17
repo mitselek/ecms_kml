@@ -9,14 +9,14 @@ protectedFromCleanup:
 
 jade:
     basedir: ./tmp_source
-    pretty: false
+    pretty: true
 markdown:
     html: true
     breaks: true
 stylus:
-    pretty: false
+    pretty: true
 javascript:
-    pretty: false
+    pretty: true
 
 server:
     port: 4000

@@ -1,7 +1,7 @@
 block vars
     -
         var videos = F.videos
-        //- var navigation = F.locales.nav
+        var _locales = F.locales
         
         if (videos) {
             //- videos.sort(function (a, b) {
@@ -77,9 +77,10 @@ html(lang=page.language)
                     //-         a(href='signin') signin
                     //-     else
                     //-         a(href='signin/exit') exit
-                    each path, nav in F.locales.nav
+                    //- pre= JSON.stringify(F.locales, null, 4)
+                    each path, nav in F.locales.navigation
                         li
-                            a(href='#'+nav)= path[page.language]
+                            a(href=path.path?path.path:path.anchor?'#'+path.anchor:'#'+nav)= path[page.language]
 
                     li
                         a(href='/et') EST

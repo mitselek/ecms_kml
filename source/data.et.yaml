@@ -1,13 +1,13 @@
 page:
     title: Kogu me lugu
     data:
-        videos: videos.yaml
-        partners: partners.yaml
-        financiers: financiers.yaml
-        thankstoteam: thankstoteam.yaml
-        thankstosupporters: thankstosupporters.yaml
-        producer: producer.yaml
-        coproducer: coproducer.yaml
-        locales: locales.yaml
+        videos: ./videos.yaml
+        partners: ./partners.yaml
+        financiers: ./financiers.yaml
+        thankstoteam: ./thankstoteam.yaml
+        thankstosupporters: ./thankstosupporters.yaml
+        producer: ./producer.yaml
+        coproducer: ./coproducer.yaml
+        locales: ./locales.yaml
     aliases:
         - /

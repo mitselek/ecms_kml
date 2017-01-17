@@ -2,3 +2,4 @@ page:
     title: Kogu me lugu
     data:
         video: video.yaml
+        locales: ./locales.yaml
