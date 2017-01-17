@@ -75,7 +75,7 @@ node_modules/entu-cms/helpers/entu2yaml.js
 
 echo
 echo --------- BUILD
-node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
+./node_modules/entu-cms/build.js ./entu-cms.yaml
 
 # echo
 # echo --------- COMMIT
