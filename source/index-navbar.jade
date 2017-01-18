@@ -9,7 +9,6 @@ ul.nav.navbar-nav.navbar-right(style="margin-right:0px;")
         li
             a(href=path.path?path.path:path.anchor?'#'+path.anchor:'#'+nav)= path[page.language]
 
-    li
-        a(href='/et') EST
-    li
-        a(href='/en') ENG
+    each lang, code in F.locales.lang
+        li
+            a(href='/' + code)= JSON.stringify(lang)

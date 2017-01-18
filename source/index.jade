@@ -65,34 +65,24 @@ html(lang=page.language)
                 }
             }
 
-    body(onload="shuffle( document.getElementsByClassName('thumbcontainer') );")
+    body
         #map-container.container-fluid
             .row
                 a(href='/')
                     img.img-responsive(src='/assets/images/kogumelugu-turquoise.svg', alt='logo', style="max-width: 200px; float:left;")
-                //- #map.col-xs-12
-                ul.nav.navbar-nav.navbar-right(style="margin-right:0px;")
-                    //- li
-                    //-     if !user
-                    //-         a(href='signin') signin
-                    //-     else
-                    //-         a(href='signin/exit') exit
-                    //- pre= JSON.stringify(F.locales, null, 4)
-                    each path, nav in F.locales.navigation
-                        li
-                            a(href=path.path?path.path:path.anchor?'#'+path.anchor:'#'+nav)= path[page.language]
-
-                    li
-                        a(href='/et') EST
-                    li
-                        a(href='/en') ENG
-                include carousel
+        include index-navbar
+        include index-carousel
+        include index-supportlink
+        include index-intro
+        include index-send
+        include index-supporters
+        include index-support
 
         #content.container-fluid
             block content
                 if videos
                     .margin.col-xs-12.col-sm-10.col-md-8.col-md-offset-1
-                        .row
+                        .row(onload="shuffle( document.getElementsByClassName('thumbcontainer') );")
                             each e in videos
                                 -
                                     var quotedbackurl = "https://kogumelugu.ee/et/video/picture?id=" + e.properties.videoUrl.values[0].value + ""

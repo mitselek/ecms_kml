@@ -49,9 +49,9 @@ linkto:
         en: View in Entu
         et: Vaata Entus
 navigation:
-    home:
-        en: Home
-        et: Avaleht
+    videos:
+        en: Videos
+        et: Videoteek
     introduction:
         en: Introduction
         et: Tutvustus
