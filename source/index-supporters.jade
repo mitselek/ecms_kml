@@ -12,7 +12,7 @@
                         table.lg
                             tr
                                 td
-                                    each p in partners || []
+                                    each p in F.partners || []
                                         .col-md-4
                                             if p.get('info') && p.get('info').indexOf('http') > -1
                                                 a(href=p.get('info'))= p.get('name')
@@ -26,7 +26,7 @@
                         tr
                             td
                                 h3 Suurtoetajad
-                        each s in financiers || []
+                        each s in F.financiers || []
                             tr
                                 td
                                     if s.get('info') && s.get('info').indexOf('http') > -1
@@ -41,7 +41,7 @@
                         tr
                             td
                                 b Meeskonnaliikmed:
-                                each t in thankstoteam || []
+                                each t in F.thankstoteam || []
                                     | &nbsp;
                                     if t.get('info') && t.get('info').indexOf('http') > -1
                                         a(href=t.get('info'))= t.get('name')
@@ -52,7 +52,7 @@
                         tr
                             td
                                 b Toetajad ja hooandjad:
-                                each t in thankstosupporters || []
+                                each t in F.thankstosupporters || []
                                     | &nbsp;
                                     if t.get('info') && t.get('info').indexOf('http') > -1
                                         a(href=t.get('info'))= t.get('name')
