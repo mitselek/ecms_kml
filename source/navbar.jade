@@ -1,0 +1,15 @@
+ul.nav.navbar-nav.navbar-right(style="margin-right:0px;")
+    //- li
+    //-     if !user
+    //-         a(href='signin') signin
+    //-     else
+    //-         a(href='signin/exit') exit
+    //- pre= JSON.stringify(F.locales, null, 4)
+    each path, nav in F.locales.navigation
+        li
+            a(href=path.path?path.path:path.anchor?'#'+path.anchor:'#'+nav)= path[page.language]
+
+    li
+        a(href='/et') EST
+    li
+        a(href='/en') ENG
