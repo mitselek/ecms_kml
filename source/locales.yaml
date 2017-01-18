@@ -8,11 +8,21 @@
 Jon Doe:
     en: Unnamed
     et: Nimeta
+carouselMessages:
+    et:
+        - Igaühel meist on oma lugu
+        - Oma roll teiste lugudes
+        - Eesti lugu, kogu me lugu
+        - Kõik me pärime oma kultuuri
+    en:
+        - Igaühel meist on oma lugu
+        - Oma roll teiste lugudes
+        - Eesti lugu, kogu me lugu
+        - Kõik me pärime oma kultuuri
 button:
     volunteer:
         en: Become a volunteer!
         et: Tule vabatahtlikuks!
-        lv: button.volunteer
 error:
     Not Found:
         en: Page not found

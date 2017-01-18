@@ -69,9 +69,9 @@ html(lang=page.language)
         #map-container.container-fluid
             .row
                 a(href='/')
-                    img.img-responsive(src='/assets/images/kogumelugu-turquoise.svg', alt='logo', width='80')
+                    img.img-responsive(src='/assets/images/kogumelugu-turquoise.svg', alt='logo', style="max-width: 200px; float:left;")
                 //- #map.col-xs-12
-                ul.nav.navbar-nav.navbar-right
+                ul.nav.navbar-nav.navbar-right(style="margin-right:0px;")
                     //- li
                     //-     if !user
                     //-         a(href='signin') signin
@@ -86,6 +86,7 @@ html(lang=page.language)
                         a(href='/et') EST
                     li
                         a(href='/en') ENG
+                include carousel
 
         #content.container-fluid
             block content

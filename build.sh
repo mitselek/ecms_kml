@@ -37,7 +37,7 @@ rm -rf ${BUILD_DIR}/assets
 mkdir -p ${BUILD_DIR}/assets
 cp -r ./assets/* ${BUILD_DIR}/assets
 
-# npm install entu-cms
+npm install entu-cms
 
 # script:
 echo
@@ -49,7 +49,7 @@ export PARENT_EID=2577
 export ITEM_DIR=./_videos
 export ITEM_YAML=video.yaml
 export LIST_YAML=${OUT_DIR}/videos.yaml
-~/github/entu-cms/helpers/entu2yaml.js
+~/node_modules/entu-cms/helpers/entu2yaml.js
 
 # export E_DEF=
 # # export E_DEF=(story,interview)
@@ -95,7 +95,7 @@ export LIST_YAML=${OUT_DIR}/videos.yaml
 
 echo
 echo --------- BUILD
-~/github/entu-cms/build.js ./entu-cms.yaml cleanup
+~/node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
 
 # echo
 # echo --------- COMMIT
