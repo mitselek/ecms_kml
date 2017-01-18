@@ -11,4 +11,5 @@ ul.nav.navbar-nav.navbar-right(style="margin-right:0px;")
 
     each lang, code in F.locales.lang
         li
-            a(href='/' + code)= JSON.stringify(lang)
+            if code !== page.language
+                a(href='/' + code)= lang[page.language]
