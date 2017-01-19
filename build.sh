@@ -37,11 +37,12 @@ rm -rf ${BUILD_DIR}/assets
 mkdir -p ${BUILD_DIR}/assets
 cp -r ./assets/* ${BUILD_DIR}/assets
 
-npm install entu-cms
+# npm install entu-cms
 
 # script:
 echo
 echo --------- FETCH
+echo --        videos
 export E_DEF=
 # export E_DEF=(story,interview)
 export PARENT_EID=2577
@@ -51,51 +52,54 @@ export ITEM_YAML=video.yaml
 export LIST_YAML=${OUT_DIR}/videos.yaml
 ~/node_modules/entu-cms/helpers/entu2yaml.js
 
-# export E_DEF=
-# # export E_DEF=(story,interview)
-# export PARENT_EID=1150
-# export TEMPLATE=${SOURCE_DIR}/item.jade
-# export DATA_LIST=${OUT_DIR}/videos.yaml
-# ~/node_modules/entu-cms/helpers/entu2yaml.js
-#
-# export E_DEF=
-# # export E_DEF=(institution,person)
-# export PARENT_EID=1178
-# export TEMPLATE=
-# export DATA_LIST=${OUT_DIR}/partners.yaml
-# ~/node_modules/entu-cms/helpers/entu2yaml.js
-#
-# export E_DEF=
-# # export E_DEF=institution
-# export PARENT_EID=1179
-# export TEMPLATE=
-# export DATA_LIST=${OUT_DIR}/financiers.yaml
-# ~/node_modules/entu-cms/helpers/entu2yaml.js
-#
-# export E_DEF=
-# # export E_DEF=person
-# export PARENT_EID=1863
-# export TEMPLATE=
-# export DATA_LIST=${OUT_DIR}/thankstoteam.yaml
-# ~/node_modules/entu-cms/helpers/entu2yaml.js
-#
-# export E_DEF=
-# # export E_DEF=person
-# export PARENT_EID=1180
-# export TEMPLATE=
-# export DATA_LIST=${OUT_DIR}/thankstosupporters.yaml
-# ~/node_modules/entu-cms/helpers/entu2yaml.js
-#
-# export E_DEF=
-# # export E_DEF=person
-# export PARENT_EID=1177
-# export TEMPLATE=
-# export DATA_LIST=${OUT_DIR}/coproducer.yaml
-# ~/node_modules/entu-cms/helpers/entu2yaml.js
+echo --        partners
+export E_DEF=
+# export E_DEF=(institution,person)
+export PARENT_EID=1178
+export ITEM_DIR=
+export ITEM_YAML=
+export LIST_YAML=${OUT_DIR}/partners.yaml
+~/node_modules/entu-cms/helpers/entu2yaml.js
+
+echo --        financiers
+export E_DEF=
+# export E_DEF=institution
+export PARENT_EID=1179
+export ITEM_DIR=
+export ITEM_YAML=
+export LIST_YAML=${OUT_DIR}/financiers.yaml
+~/node_modules/entu-cms/helpers/entu2yaml.js
+
+echo --        thankstoteam
+export E_DEF=
+# export E_DEF=person
+export PARENT_EID=1863
+export ITEM_DIR=
+export ITEM_YAML=
+export LIST_YAML=${OUT_DIR}/thankstoteam.yaml
+~/node_modules/entu-cms/helpers/entu2yaml.js
+
+echo --        thankstosupporters
+export E_DEF=
+# export E_DEF=person
+export PARENT_EID=1180
+export ITEM_DIR=
+export ITEM_YAML=
+export LIST_YAML=${OUT_DIR}/thankstosupporters.yaml
+~/node_modules/entu-cms/helpers/entu2yaml.js
+
+echo --        coproducer
+export E_DEF=
+# export E_DEF=person
+export PARENT_EID=1177
+export ITEM_DIR=
+export ITEM_YAML=
+export LIST_YAML=${OUT_DIR}/coproducer.yaml
+~/node_modules/entu-cms/helpers/entu2yaml.js
 
 echo
 echo --------- BUILD
-~/node_modules/entu-cms/build.js ./entu-cms.yaml cleanup
+~/node_modules/entu-cms/build.js ./entu-cms.yaml
 
 # echo
 # echo --------- COMMIT

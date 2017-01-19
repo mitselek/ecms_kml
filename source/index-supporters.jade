@@ -14,10 +14,10 @@
                                 td
                                     each p in F.partners || []
                                         .col-md-4
-                                            if p.get('info') && p.get('info').indexOf('http') > -1
-                                                a(href=p.get('info'))= p.get('name')
+                                            if p.displayinfo && p.displayinfo.indexOf('http') > -1
+                                                a(href=p.displayinfo)= p.displayname
                                             else
-                                                a= p.get('name')
+                                                a= p.displayname
 
 
             #bottom-table.row
@@ -29,10 +29,10 @@
                         each s in F.financiers || []
                             tr
                                 td
-                                    if s.get('info') && s.get('info').indexOf('http') > -1
-                                        a(href=s.get('info'))= s.get('name')
+                                    if s.displayinfo && s.displayinfo.indexOf('http') > -1
+                                        a(href=s.displayinfo)= s.displayname
                                     else
-                                        a= s.get('name')
+                                        a= s.displayname
                 .col-md-8
                     table.md
                         tr
@@ -43,10 +43,10 @@
                                 b Meeskonnaliikmed:
                                 each t in F.thankstoteam || []
                                     | &nbsp;
-                                    if t.get('info') && t.get('info').indexOf('http') > -1
-                                        a(href=t.get('info'))= t.get('name')
+                                    if t.displayinfo && t.displayinfo.indexOf('http') > -1
+                                        a(href=t.displayinfo)= t.displayname
                                     else
-                                        a= t.get('name')
+                                        a= t.displayname
                                     | ,
                                 |  jt.
                         tr
@@ -54,10 +54,10 @@
                                 b Toetajad ja hooandjad:
                                 each t in F.thankstosupporters || []
                                     | &nbsp;
-                                    if t.get('info') && t.get('info').indexOf('http') > -1
-                                        a(href=t.get('info'))= t.get('name')
+                                    if t.displayinfo && t.displayinfo.indexOf('http') > -1
+                                        a(href=t.displayinfo)= t.displayname
                                     else
-                                        a= t.get('name')
+                                        a= t.displayname
                                     | ,
                                 |  jt.
                     table.md
@@ -73,7 +73,7 @@
         .row.unitas
             .col-md-2
                 a(href='http://unitas.ee', target='_blank')
-                    img.img-responsive(src='/img/unitas+logo.jpg')
+                    img.img-responsive(src='/assets/images/unitas+logo.jpg')
             .col-md-10
                 h3 Algataja
                 p
